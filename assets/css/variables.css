@@ -1,0 +1,11 @@
+/* Arquivo de variáveis CSS */
+
+:root {
+    --primary-color: #0A1128;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --gap: 3rem;
+    --light-gray-color: #EEEEEE;
+    --secondary-color: crimson;
+    --dark-bg: #1f1f1f
+}

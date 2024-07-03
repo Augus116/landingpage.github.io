@@ -1,0 +1,61 @@
+.main-bg {
+  background-image: url('../img/flat-mountains.svg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+.alt-bg {
+  background-image: url('../img/parede_cinza.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+.alt2-bg {
+  background-image: url('../img/liquid-cheese.svg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--dark-bg)
+}
+.secondary-bg {
+  background-image: url('../img/endless-constellation.svg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+.dark-bg {
+  height: 120px;
+  background-color: var(--dark-bg);
+  background-size: cover;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.white-bg {
+  background: var(--dark-bg);
+}
+
+.main-content {
+  max-width: 120rem;
+  /* 120rem = 1200px */
+  margin: 0 auto;
+  /* padding: 3rem; */
+  padding: 10rem var(--gap);
+  /* correção */
+  color: var(--white-color)
+}
+
+.section {
+  min-height: 100vh;
+  /* parte 3/4 */
+  /* color: var(--primary-color); */
+}
+
+/* parte 3 */
+.menu-spacing {
+  height: 6.5rem;
+}
+
+body .full-width{
+  width: 100%;
+  flex: 1 1 100%;
+}

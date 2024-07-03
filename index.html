@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipamentos de Escalada</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <!-- Adicionando os arquivos CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/css/classes.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- Menu -->
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside id="logo" class="menu white-bg">
+    <div class="main-content menu-content">
+      <!-- Logo -->
+      <h1><a href="#intro">Logo</a></h1>
+      <!-- Navegação -->
+      <nav>
+        <ul>
+          <li><a href="#intro">Início</a></li>
+          <li><a href="#top-equipments">Equipamentos Principais</a></li>
+          <li><a href="#featured-products">Produtos em Destaque</a></li>
+          <li><a href="#about">Sobre Nós</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Parte 1: Introdução -->
+  <section id="intro" class="intro main-bg">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Equipamentos de Escalada de Alta Qualidade</h2>
+        <p>Encontre os melhores equipamentos de escalada para suas aventuras. Temos tudo o que você precisa para
+          enfrentar desafios e alcançar novos patamares.</p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/climbingequipmentcollection4vray3dmodel000-removebg-preview.png">
+      </div>
+    </div>
+  </section>
+  <section id="section1" class="dark-bg">
+    <h3>Veja nossos produtos abaixo</h3>
+    <p>Nossos produtos foram feitos pensando na sua segurança, todos foram testados e são totalmente seguros.</p>
+  </section>
+  <!-- Parte 2: Equipamentos Principais -->
+  <section id="top-equipments" class="alt2-bg">
+    <div class="main-content top-equipments-content">
+      <h2>Equipamentos Principais</h2>
+      <p>Confira nossos equipamentos de escalada mais vendidos e altamente recomendados pelos profissionais.</p>
+      <!-- Adicione aqui os produtos principais -->
+      <div class="product">
+        <h3>Sapatilhas de Escalada</h3>
+        <p>Confortáveis, duráveis e com aderência excepcional para enfrentar qualquer rocha.</p>
+        <img src="assets/img/sapatilhas.png" alt="Sapatilhas de Escalada">
+      </div>
+      <div class="product">
+        <h3>Corda de Escalada</h3>
+        <p>Rope de alta resistência e leveza, ideal para escaladas longas e seguras.</p>
+        <img src="assets/img/corda.png" alt="Corda de Escalada">
+      </div>
+      <div class="product">
+        <h3>Arnês</h3>
+        <p>Arnês ergonômico e confortável para proporcionar liberdade de movimento durante a escalada.</p>
+        <img src="assets/img/arnes.png" alt="Arnês">
+      </div>
+    </div>
+  </section>
+
+  <!-- Parte 3: Produtos em Destaque -->
+  <section id="featured-products" class="alt-bg">
+    <div class="main-content featured-products-content">
+      <h2>Produtos em Destaque</h2>
+      <p>Descubra nossos produtos em destaque, cuidadosamente selecionados para oferecer qualidade e desempenho.</p>
+      <!-- Adicione aqui os produtos em destaque -->
+      <div class="product">
+        <h3>Corda de Alta Performance</h3>
+        <p>Rope projetada para escaladas extremas, oferecendo resistência excepcional e baixo peso.</p>
+        <img src="assets/img/corda_alta_performance.png" id="Corda de alta performance">
+      </div>
+      <div class="product">
+        <h3>Capacete de Escalada</h3>
+        <p>Capacete leve e resistente, com sistema de ajuste para proporcionar conforto e segurança.</p>
+        <img src="assets/img/capacete.png" alt="Capacete de Escalada">
+      </div>
+      <div class="product">
+        <h3>Mochila de Escalada</h3>
+        <p>Mochila ergonômica e espaçosa, com compartimentos para organizar todos os seus equipamentos.</p>
+        <img src="assets/img/mochila.png" alt="Mochila de Escalada">
+      </div>
+    </div>
+  </section>
+
+  <!-- Parte 4: Sobre Nós -->
+  <section id="about" class="white-bg">
+    <div class="main-content about-content">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma equipe de entusiastas de escalada apaixonados por oferecer os melhores equipamentos e serviços para
+        a comunidade de escalada. Nossa missão é fornecer produtos de qualidade e suporte excepcional para que você
+        possa desfrutar ao máximo suas aventuras.</p>
+    </div>
+  </section>
+
+  <!-- Parte 5: Contato -->
+  <section id="contact" class="secondary-bg">
+    <div class="main-content contact-content">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para obter mais informações sobre nossos produtos ou para solicitar assistência.</p>
+      <form class="contact-form">
+        <fieldset class="form-grid">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Enviar</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2024 Equipamentos de Escalada. Todos os direitos reservados.</p>
+    <p>Feito com &#10084; por <a href="#">Augusto</a></p>
+  </footer>
+
+  <!-- Botão de voltar ao topo -->
+  <a href="#" class="back-to-top" title="Voltar ao topo">↑</a>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+    integrity="sha512-6oVLg6JI/2EKOb5FwsqYf6S/rr1zfQp/d3F3N/OAR7A8zQNRHbMf2XU1jJe7c8fF+D+G7/wD8DBa8HK9CSJmGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
