@@ -46,8 +46,8 @@
         <p>Encontre os melhores equipamentos de escalada para suas aventuras. Temos tudo o que você precisa para
           enfrentar desafios e alcançar novos patamares.</p>
       </div>
-      <div class="intro-img">
-        <img src="assets/img/climbingequipmentcollection4vray3dmodel000-removebg-preview.png">
+      <div class="banner">
+        <img src="assets/img/climbingequipmentcollection4vray3dmodel000-removebg-preview.png" id="bannerImage">
       </div>
     </div>
   </section>
@@ -64,19 +64,26 @@
       <div class="product">
         <h3>Sapatilhas de Escalada</h3>
         <p>Confortáveis, duráveis e com aderência excepcional para enfrentar qualquer rocha.</p>
-        <img src="assets/img/sapatilhas.png" alt="Sapatilhas de Escalada">
+        <img src="assets/img/sapatilhas.png" alt="Sapatilhas de Escalada"
+        onclick="openModal('assets/img/sapatilhas.png')">
       </div>
       <div class="product">
         <h3>Corda de Escalada</h3>
         <p>Rope de alta resistência e leveza, ideal para escaladas longas e seguras.</p>
-        <img src="assets/img/corda.png" alt="Corda de Escalada">
+        <img src="assets/img/corda.png" alt="Corda de Escalada"
+        onclick="openModal('assets/img/corda.png')">
       </div>
       <div class="product">
         <h3>Arnês</h3>
         <p>Arnês ergonômico e confortável para proporcionar liberdade de movimento durante a escalada.</p>
-        <img src="assets/img/arnes.png" alt="Arnês">
+        <img src="assets/img/arnes.png" alt="Arnês"
+        onclick="openModal('assets/img/arnes.png')">
       </div>
     </div>
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+  </div>
   </section>
 
   <!-- Parte 3: Produtos em Destaque -->
@@ -88,17 +95,20 @@
       <div class="product">
         <h3>Corda de Alta Performance</h3>
         <p>Rope projetada para escaladas extremas, oferecendo resistência excepcional e baixo peso.</p>
-        <img src="assets/img/corda_alta_performance.png" id="Corda de alta performance">
+        <img src="assets/img/corda_alta_performance.png" id="Corda de alta performance"
+        onclick="openModal('assets/img/corda_alta_performance.png')">
       </div>
       <div class="product">
         <h3>Capacete de Escalada</h3>
         <p>Capacete leve e resistente, com sistema de ajuste para proporcionar conforto e segurança.</p>
-        <img src="assets/img/capacete.png" alt="Capacete de Escalada">
+        <img src="assets/img/capacete.png" alt="Capacete de Escalada"
+        onclick="openModal('assets/img/capacete.png')">
       </div>
       <div class="product">
         <h3>Mochila de Escalada</h3>
         <p>Mochila ergonômica e espaçosa, com compartimentos para organizar todos os seus equipamentos.</p>
-        <img src="assets/img/mochila.png" alt="Mochila de Escalada">
+        <img src="assets/img/mochila.png" alt="Mochila de Escalada"
+        onclick="openModal('assets/img/mochila.png')">
       </div>
     </div>
   </section>
@@ -154,6 +164,7 @@
     integrity="sha512-6oVLg6JI/2EKOb5FwsqYf6S/rr1zfQp/d3F3N/OAR7A8zQNRHbMf2XU1jJe7c8fF+D+G7/wD8DBa8HK9CSJmGA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="assets/js/main.js"></script>
+  <script src="js/banner.js"></script>
 </body>
 
 </html>

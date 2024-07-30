@@ -11,7 +11,7 @@
 
 /* https://undraw.co/ */
 .intro-text-content,
-.intro-img {
+.banner {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -26,8 +26,8 @@
 
 /* elements body line-height: 1.5; */
 
-.intro-img img,
-.intro-img svg {
+.banner img,
+.banner svg {
   max-width: 100%;
   height: auto;
 }
