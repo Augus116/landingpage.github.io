@@ -21,6 +21,11 @@ body {
 .product img{
   width: 300px;
   cursor: pointer;
+  transition: ease-in-out 1s;
+}
+.product img:hover{
+  width: 400px;
+  rotate: 5deg;
 }
 .modal{
   display: none;

@@ -21,7 +21,7 @@
   <!-- Menu -->
   <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
   <label class="close-menu-label" for="close-menu" title="close menu"></label>
-  <aside id="logo" class="menu white-bg">
+  <aside id="logo" class="menu black-bg">
     <div class="main-content menu-content">
       <!-- Logo -->
       <h1><a href="#intro">Logo</a></h1>
@@ -114,7 +114,7 @@
   </section>
 
   <!-- Parte 4: Sobre Nós -->
-  <section id="about" class="white-bg">
+  <section id="about" class="black-bg">
     <div class="main-content about-content">
       <h2>Sobre Nós</h2>
       <p>Somos uma equipe de entusiastas de escalada apaixonados por oferecer os melhores equipamentos e serviços para
@@ -128,11 +128,15 @@
     <div class="main-content contact-content">
       <h2>Contato</h2>
       <p>Entre em contato conosco para obter mais informações sobre nossos produtos ou para solicitar assistência.</p>
-      <form class="contact-form">
+      <form class="contact-form" id="form">
         <fieldset class="form-grid">
           <div class="form-group">
             <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+            <input type="name" id="name" name="name" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Sobrenome</label>
+            <input type="name" id="last-name" name="last-name" placeholder="Seu sobrenome" required>
           </div>
           <div class="form-group">
             <label for="email">Email:</label>
@@ -153,7 +157,7 @@
   <!-- Rodapé -->
   <footer class="footer">
     <p>&copy; 2024 Equipamentos de Escalada. Todos os direitos reservados.</p>
-    <p>Feito com &#10084; por <a href="#">Augusto</a></p>
+    <p>Feito com &#10084; por Augusto</p>
   </footer>
 
   <!-- Botão de voltar ao topo -->
@@ -165,6 +169,23 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="assets/js/main.js"></script>
   <script src="js/banner.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function () {
+          emailjs.init("0W-7ayL78bJglZxYZ");
+      })();
+  </script>
+  <script>
+      document.getElementById('form').addEventListener('submit', function (event) {
+          event.preventDefault();
+          emailjs.sendForm('service_cn6weou', 'template_2ber9s3', this)
+              .then(function () {
+                  alert('Email enviado com sucesso!');
+              }, function (error) {
+                  alert('Erro ao enviar o email: ' + JSON.stringify(error));
+              });
+      });
+  </script>
 </body>
 
 </html>

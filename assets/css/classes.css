@@ -11,8 +11,8 @@
   color: var(--white-color);
 }
 .alt2-bg {
-  background-image: url('../img/liquid-cheese.svg');
-  background-size: cover;
+  background-image: url('../img/protruding-squares.svg');
+  background-size: auto;
   background-position: center center;
   color: var(--dark-bg)
 }
@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-.white-bg {
+.black-bg {
   background: var(--dark-bg);
 }
 
